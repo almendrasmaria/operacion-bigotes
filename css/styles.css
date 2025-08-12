@@ -108,3 +108,88 @@ header nav a {
   width: 100%;
   height: 100%;
 }
+
+#requirements {
+  max-width: 1300px;
+  margin: 150px auto;
+  display: grid;
+  grid-template-columns: 370px 290px 650px;
+  grid-template-rows: auto 1fr;
+}
+
+#requirements .requirements-info {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#requirements .requirements-image {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  align-items: flex-end;
+}
+
+#requirements .requirements-image img {
+  width: 100%;
+  height: auto;
+}
+
+#requirements-list {
+  grid-column: 3;
+  grid-row: 1 / 3;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 40px;
+  padding: 0;
+  margin: 0;
+}
+
+#requirements-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.req-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #185399;
+  flex-shrink: 0;
+}
+
+.req-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.req-text h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #212121;
+}
+
+.req-text p {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #4a4a4a;
+}
+
+.section-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b6b6b;
+  margin-bottom: 8px;
+}
+
+#requirements h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #393939;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
