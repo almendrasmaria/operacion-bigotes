@@ -1,1 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap'); 
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    color: #393939;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 1440px;
+    margin: auto;
+}
+
+.navbar-brand img {
+    width: 70px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: #393939;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.navbar-actions .btn-crear-cuenta {
+    background-color: #18529A;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+}
