@@ -50,3 +50,75 @@ body{
     border-radius: 6px;
     text-decoration: none;
 }
+
+.hero .hero-grid {
+    width: 1440px;
+    margin: 0 auto;
+    background: #D7B8FF;           
+    border-radius: 40px;
+    padding: 0 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: 440px;
+    overflow: hidden;
+}
+
+
+.hero-title {
+    font-weight: 600;
+    font-size: 78px;
+    line-height: 0.9;
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4;
+    max-width: 535px;
+    margin-bottom: 24px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.btn-primary,
+.btn-outline {
+    display: inline-flex;        
+    justify-content: center;
+    align-items: center;
+    width: 200px;                
+    height: 50px;                
+    font-size: 16px;             
+    font-weight: 600;
+    line-height: 1.4;
+    border-radius: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.btn-primary {
+    background: #18529A;    
+    color: #fff;
+}
+
+.btn-outline {
+    background: #fff;
+    color: #18529A;
+    border: 1.5px solid #18529A;
+}
+
+.hero-image {
+    align-self: end;
+    justify-self: end;
+}
+
+.hero-image img {
+    display: block;
+    max-width: 620px;
+    height: auto;
+}
