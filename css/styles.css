@@ -17,9 +17,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
-    width: 1440px;
-    margin: auto;
+    height: 100px;
+    width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #393939;
 }
 
 .navbar-brand img {
@@ -34,7 +35,7 @@ body{
     gap: 40px;
 }
 
-.navbar-menu li a {
+.navbar-menu a {
     text-decoration: none;
     color: #393939;
     font-weight: 400;
@@ -46,30 +47,27 @@ body{
     color: white;
     font-size: 14px;
     font-weight: 500;
-    padding: 10px 20px;
-    border-radius: 6px;
+    padding: 10px 25px;
+    border-radius: 15px;
     text-decoration: none;
 }
 
 .hero .hero-grid {
-    width: 1440px;
-    margin: 0 auto;
-    background: #D7B8FF;           
-    border-radius: 40px;
-    padding: 0 70px;
+    width: 1200px;
+    margin: 60px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    min-height: 440px;
-    overflow: hidden;
+    column-gap: 100px;
+    min-height: 600px;
 }
-
 
 .hero-title {
     font-weight: 600;
-    font-size: 78px;
+    font-size: 76px;
     line-height: 0.9;
     letter-spacing: -0.01em;
+    color: #18529A;
     margin-bottom: 24px;
 }
 
@@ -91,7 +89,7 @@ body{
     display: inline-flex;        
     justify-content: center;
     align-items: center;
-    width: 200px;                
+    width: 210px;                
     height: 50px;                
     font-size: 16px;             
     font-weight: 600;
@@ -102,25 +100,47 @@ body{
 }
 
 .btn-primary {
-    background: #18529A;    
-    color: #fff;
+    background: #FF703F;    
+    color: white;
 }
 
 .btn-outline {
-    background: #fff;
-    color: #18529A;
-    border: 1.5px solid #18529A;
+    background: white;
+    color: #FF703F;
+    border: 1.5px solid #FF703F;
 }
 
 .hero-image {
-    align-self: end;
-    justify-self: end;
+    display: flex;
+    gap: 24px;
+    justify-content: flex-end;
 }
 
-.hero-image img {
-    display: block;
-    max-width: 620px;
-    height: auto;
+.hero-figure-large {
+    width: 320px;
+    height: 540px;
+    border-radius: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-figure-small {
+    width: 250px;
+    height: 390px;
+    border-radius: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-figure-large img, 
+.hero-figure-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .about {
@@ -291,3 +311,4 @@ body{
     height: 100%;
     object-fit: cover;     
 }
+
