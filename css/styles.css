@@ -54,12 +54,12 @@ body{
 
 .hero .hero-grid {
     width: 1200px;
+    height: 650px;
     margin: 60px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     column-gap: 100px;
-    min-height: 600px;
 }
 
 .hero-title {
@@ -149,7 +149,7 @@ body{
 
 .about-grid {
     width: 1200px;
-    min-height: 600px;
+    height: 650px;
     margin: 60px auto;
     display: grid;
     grid-template-columns: 498px 1fr; 
