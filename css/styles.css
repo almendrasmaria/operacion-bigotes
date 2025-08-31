@@ -388,3 +388,59 @@ body{
     cursor: pointer;
 }
 
+.site-footer {      
+    padding: 18px 0 10px;
+}
+
+.site-footer .navbar {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    border: none;                   
+    position: relative;              
+}
+
+.site-footer .navbar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -12px;                      
+    height: 1px;
+    background: #D8D1C8;            
+}
+
+.site-footer .navbar-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.site-footer .social-link {
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+    background: #FCEAE4;            
+    border: 1px solid #F6C8B8;      
+    text-decoration: none;
+}
+
+.site-footer .social-link svg {
+    width: 18px;
+    height: 18px;
+    stroke: #FF703F;                
+    stroke-width: 2;
+}
+
+.footer-bottom {
+    width: 1200px;
+    margin: 8px auto 0;
+    padding: 8px 0 0;
+    border-top: 1px solid #D8D1C8; 
+}
+
+.footer-copy {
+    font-size: 11px;
+    color: #7A746C;                 
+}
