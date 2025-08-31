@@ -328,3 +328,63 @@ body{
     object-fit: cover;     
 }
 
+
+.newsletter {
+    background-image: url('/images/newsletter-section.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-top: 80px;
+}
+
+.newsletter-grid {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.newsletter-content {
+    grid-column: 2;
+    max-width: 574px;
+    text-align: left;
+}
+
+.newsletter-title {
+    font-size: 48px;
+    font-weight: 600;
+    color: #393939;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    flex: 1;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 14px 24px;
+    background-color: #0d3b66;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
