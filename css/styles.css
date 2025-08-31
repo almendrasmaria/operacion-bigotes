@@ -20,7 +20,8 @@ body{
     height: 100px;
     width: 1200px;
     margin: 0 auto;
-    border-bottom: 1px solid #393939;
+    border-bottom: 1px solid #D8D1C8;            
+;
 }
 
 .navbar-brand img {
