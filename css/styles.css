@@ -332,7 +332,7 @@ body{
 
 
 .newsletter {
-    background-image: url('images/newsletter-section.png');
+    background-image: url('../images/newsletter-section.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
