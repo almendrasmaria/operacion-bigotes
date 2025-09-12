@@ -7,7 +7,10 @@ Es una página de adopción responsable de gatos, pensada para ser un puente ent
 
 ## 🎨 Diseño en Figma  
 El maquetado en Figma aún se encuentra en proceso: 
+
 [Figma – Operación Bigotes](https://www.figma.com/proto/gEvpd33In2HcrgeJWfFNYI/Operaci%C3%B3n-bigotes?node-id=2330-62&p=f&t=blw7Gv5yhX89tvdX-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2330%3A62)
+
+[Figma – Gatos en adopción](https://www.figma.com/proto/gEvpd33In2HcrgeJWfFNYI/Operaci%C3%B3n-bigotes?node-id=2429-178&t=H1dxbusJUM1Hqzzz-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2330%3A62)
 
 ## 🛠️ Proceso  
 - El proyecto comenzó con un **maquetado en Figma**, donde definí la estética, la paleta de colores y la estructura de las secciones.  
