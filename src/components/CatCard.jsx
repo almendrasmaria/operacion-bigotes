@@ -1,8 +1,16 @@
-import { Calendar, MapPin, BadgeCheck, Mars, Venus } from "lucide-react";
+// src/components/CatCard.jsx
+import { HugeiconsIcon } from "@hugeicons/react";
+import {
+  CalendarIcon,     
+  LocationIcon,     
+  MaleSymbolIcon,
+  FemaleSymbolIcon,
+  InstagramIcon,   
+} from "@hugeicons/core-free-icons";
 
 export default function CatCard({ cat }) {
   const { name, sex, ageYears, description, shelterHandle, location, photo } = cat;
-  const SexIcon = sex === "female" ? Venus : Mars;
+  const SexIcon = sex === "female" ? FemaleSymbolIcon : MaleSymbolIcon;
   const sexLabel = sex === "female" ? "Hembra" : "Macho";
 
   return (
@@ -15,8 +23,14 @@ export default function CatCard({ cat }) {
         <h3 className="cat-card-title">{name}</h3>
 
         <ul className="cat-card-meta">
-          <li className="meta-item"><SexIcon size={16} /> <span>{sexLabel}</span></li>
-          <li className="meta-item"><Calendar size={16} /> <span>{ageYears} {ageYears === 1 ? "año" : "años"}</span></li>
+          <li className="meta-item">
+            <HugeiconsIcon icon={SexIcon} size={16} color="currentColor" strokeWidth={1.5} />
+            <span>{sexLabel}</span>
+          </li>
+          <li className="meta-item">
+            <HugeiconsIcon icon={CalendarIcon} size={16} color="currentColor" strokeWidth={1.5} />
+            <span>{ageYears} {ageYears === 1 ? "año" : "años"}</span>
+          </li>
         </ul>
 
         <p className="cat-card-desc">{description}</p>
@@ -24,8 +38,14 @@ export default function CatCard({ cat }) {
 
         <div className="cat-card-footer">
           <div className="shelter">
-            <div className="shelter-row"><BadgeCheck size={16} /><span className="shelter-handle">@{shelterHandle}</span></div>
-            <div className="shelter-row shelter-loc"><MapPin size={16} /><span>{location}</span></div>
+            <div className="shelter-row">
+              <HugeiconsIcon icon={InstagramIcon} size={16} color="currentColor" strokeWidth={1.5} />
+              <span className="shelter-handle">@{shelterHandle}</span>
+            </div>
+            <div className="shelter-row shelter-loc">
+              <HugeiconsIcon icon={LocationIcon} size={16} color="currentColor" strokeWidth={1.5} />
+              <span>{location}</span>
+            </div>
           </div>
 
           <button type="button" className="btn-adopt">Adoptar</button>

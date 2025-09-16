@@ -228,28 +228,35 @@ body {
     gap:12px;
 }
 
-.shelter{ display:flex; flex-direction:column; gap:6px; }
-.shelter-row{ display:flex; align-items:center; gap:8px; font-size:14px; color:#1f1f1f; }
-.shelter-handle{ font-weight:500; }
-.shelter-loc{ color:#454545; }
-
-.shelter-row:first-child svg{
-    padding:3px;
-    border-radius:6px;
-    border:1px solid rgba(0,0,0,.15);
+.shelter{ 
+    display:flex; 
+    flex-direction:column; 
+    gap:6px; 
 }
 
+.shelter-row{ 
+    display:flex; 
+    align-items:center; 
+    gap:8px; 
+    font-size:14px; 
+    color:#1f1f1f; 
+}
+
+.shelter-handle{ font-weight:500; }
+
+.shelter-loc{ color:#454545; }
+
 .btn-adopt{
-  background:var(--brand);
-  color:var(--ink);
-  border:1.5px solid var(--ink);
-  height:36px;
-  padding:0 18px;
-  border-radius:var(--radius);
-  font-weight:500;
-  font-size:15px;
-  transition: all 0.2s ease;
-  cursor:pointer;
+    background:var(--brand);
+    color:var(--ink);
+    border:1.5px solid var(--ink);
+    height:36px;
+    padding:0 18px;
+    border-radius:var(--radius);
+    font-weight:500;
+    font-size:15px;
+    transition: all 0.2s ease;
+    cursor:pointer;
 }
 
 .btn-adopt:hover{ background:transparent; }

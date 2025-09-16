@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Menu } from "lucide-react";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { MenuIcon } from "@hugeicons/core-free-icons"; 
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -25,13 +26,14 @@ export default function Navbar() {
           <a href="#donar" className="btn-donate">Donar</a>
           <a href="#crear-cuenta" className="btn-create-account">Crear cuenta</a>
         </div>
+
         <button
           className="nav-toggle"
           aria-expanded={open}
           aria-label="Abrir o cerrar menú"
-          onClick={() => setOpen((v) => !v)}
+          onClick={() => setOpen(v => !v)}
         >
-          <Menu size={24} />
+          <HugeiconsIcon icon={MenuIcon} size={20} color="currentColor" strokeWidth={1.5} />
         </button>
       </nav>
     </header>
