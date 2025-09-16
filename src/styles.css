@@ -1,99 +1,136 @@
 :root {
-    --ink: #232323;
-    --line: #D8D1C8;
-    --brand: #FE997B;   
-    --success: #8CBD5B; 
-    --radius: 999px;
+  --ink: #232323;
+  --line: #D8D1C8;
+  --brand: #FE997B;
+  --success: #8CBD5B;
+  --radius: 999px;
 }
+
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #fff;
-    color: var(--ink);
+body { 
+    font-family: 'Poppins', sans-serif; 
+    background:#fff; 
+    color:var(--ink); 
 }
 
-.navbar {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 64px;
-    border-bottom: 1px solid var(--line);
+.navbar{
+    padding:10px 16px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;  
+    flex-wrap:wrap;    
+    border-bottom:1px solid var(--line);        
 }
 
-.navbar-brand {
-    text-decoration: none;
-    color: var(--ink);
-    font-weight: 600;
-    font-size: 16px;
+.navbar-brand{
+    text-decoration:none; color:var(--ink);
+    font-weight:600; font-size:16px;
 }
 
-.navbar-menu {
-    list-style: none;
-    display: flex;
-    gap: 32px;
+.nav-toggle{
+    background:transparent; border:none; cursor:pointer; color:var(--ink);
+    display:inline-flex; align-items:center; justify-content:center; padding:4px;
 }
 
-.navbar-menu .nav-link {
-    text-decoration: none;
-    color: var(--ink);
-    font-size: 16px;
-    font-weight: 400;
+.navbar-menu{
+    list-style:none;
+    display:none;                  
+    flex-direction:column;
+    gap:14px;
+    width:100%;
+    border-top:1px solid var(--line);
+    padding-top:12px;
+    order:3;                       
+    flex-basis:100%;
 }
-.navbar-menu .nav-link:hover { opacity: .75; }
 
-.navbar-actions {
-    display: flex;
-    gap: 10px;
+.navbar-menu.is-open{ display:flex; }
+
+.navbar-menu .nav-link{
+    text-decoration:none; 
+    color:var(--ink);
+    font-size:16px; 
+    font-weight:400;
+}
+.navbar-menu .nav-link:hover{ opacity:.75; }
+
+.navbar-actions{ display:none; }     
+
+.nav-actions-mobile{
+    display:flex; 
+    flex-direction:column; 
+    gap:10px; 
+    margin-top:8px;
 }
 
-.btn-donate {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 115px;
-    height: 32px;
-    padding: 0 14px;
-    border-radius: var(--radius);
-    font-weight: 400;
-    font-size: 16px;
-    text-decoration: none;
-    background: #fff;
-    color: var(--ink);
-    border: 1.5px solid var(--ink);
+.nav-actions-mobile .btn-donate,
+.nav-actions-mobile .btn-create-account{
+    width:100%; 
+    justify-content:center;
+}
+
+.btn-donate, .btn-create-account{
+    display:inline-flex; 
+    align-items:center; 
+    justify-content:center;
+    height:32px; 
+    padding:0 14px; 
+    border-radius:var(--radius);
+    font-weight:400; font-size:16px; 
+    text-decoration:none;
     transition: all 0.2s ease;
-    cursor: pointer; 
+    cursor:pointer;
 }
 
-.btn-donate:hover {
-    background: var(--success);
-    color: #fff;
-    border: 1.5px solid var(--ink);
+.btn-donate{
+    background:#fff;
+    color:var(--ink); 
+    border:1.5px solid var(--ink);
 }
 
-.btn-create-account {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 160px;
-    height: 32px;
-    padding: 0 14px;
-    border-radius: var(--radius);
-    font-weight: 400;
-    font-size: 16px;
-    text-decoration: none;
-    background: var(--brand); 
-    color: var(--ink);
-    border: 1.5px solid var(--ink);
-    transition: all 0.2s ease;
-    cursor: pointer; 
+.btn-donate:hover{
+    background:var(--success); 
+    color:#fff; 
+    border-color:var(--success);
 }
 
-.btn-create-account:hover {
-    background: transparent;
-    color: var(--ink);     
+.btn-create-account{
+    background:var(--brand); 
+    color:var(--ink); 
+    border:1.5px solid var(--ink);
+}
+
+.btn-create-account:hover{ 
+    background:transparent; 
+    color:var(--ink); 
+}
+
+@media screen and (min-width: 768px){
+    .navbar{
+        max-width:100%; 
+        height:64px; 
+        padding:10px 16px;
+        flex-wrap:nowrap;                      
+    }
+
+    .nav-toggle{display:none; }               
+    .navbar-actions{ display:flex; gap:10px; } 
+
+    .navbar-menu{
+        display:flex !important;
+        flex-direction:row; gap:32px;
+        border-top:none; padding-top:0;
+        order:0; flex-basis:auto; width:auto;
+    }
+
+    .nav-actions-mobile{ display:none; }      
+}
+
+@media screen and (min-width: 1200px){
+    .navbar{ 
+        max-width:1200px; 
+        margin:0 auto; 
+    }
 }
