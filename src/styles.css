@@ -136,3 +136,127 @@ body {
         margin:0 auto; 
     }
 }
+
+.container { 
+    max-width: 1200px; 
+    margin: 20px auto; 
+    padding: 0 16px; 
+}
+
+.page-title { 
+    font-size: 28px; 
+    font-weight: 600; 
+    color: var(--ink); 
+    margin: 16px 0 12px; 
+}
+
+.cards-grid{
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr; 
+}
+
+@media screen and (min-width: 768px) {
+    .cards-grid {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+}
+
+.cat-card{
+    background:#fff;
+    border:1.5px solid var(--ink);
+    border-radius:20px;
+    padding:12px;
+    width:100%;
+}
+
+.cat-card-media{
+    border-radius:16px;
+    overflow:hidden;
+}
+.cat-card-media img{
+    display:block;
+    width:100%;
+    height:auto;
+    object-fit:cover;
+}
+
+.cat-card-body{ padding:10px 6px 6px; }
+
+.cat-card-title{
+    font-size:22px;
+    line-height:1.1;
+    font-weight:600;
+    color:var(--ink);
+    margin:10px 0 6px;
+}
+
+.cat-card-meta{
+    list-style:none;
+    display:flex;
+    gap:16px;
+    padding:0;
+    margin:0 0 8px;
+    color:#333;
+    font-size:14px;
+}
+
+.meta-item{ 
+    display:flex; 
+    align-items:center; 
+    gap:6px; 
+}
+
+.cat-card-desc{
+    font-size:14px;
+    line-height:1.45;
+    color:#333;
+    margin:0 0 12px;
+}
+
+.cat-card-divider{
+    border:none;
+    border-top:1px solid var(--ink);
+    opacity:.25;
+    margin:6px 0 12px;
+}
+
+.cat-card-footer{
+    display:grid;
+    grid-template-columns:1fr auto;
+    align-items:center;
+    gap:12px;
+}
+
+.shelter{ display:flex; flex-direction:column; gap:6px; }
+.shelter-row{ display:flex; align-items:center; gap:8px; font-size:14px; color:#1f1f1f; }
+.shelter-handle{ font-weight:500; }
+.shelter-loc{ color:#454545; }
+
+.shelter-row:first-child svg{
+    padding:3px;
+    border-radius:6px;
+    border:1px solid rgba(0,0,0,.15);
+}
+
+.btn-adopt{
+  background:var(--brand);
+  color:var(--ink);
+  border:1.5px solid var(--ink);
+  height:36px;
+  padding:0 18px;
+  border-radius:var(--radius);
+  font-weight:500;
+  font-size:15px;
+  transition: all 0.2s ease;
+  cursor:pointer;
+}
+
+.btn-adopt:hover{ background:transparent; }
+.btn-adopt:active{ transform: translateY(1px); }
+
+.cat-card a:focus-visible,
+.cat-card button:focus-visible{
+    outline:3px solid rgba(0,0,0,.2);
+    outline-offset:2px;
+}
