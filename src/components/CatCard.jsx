@@ -1,4 +1,3 @@
-// src/components/CatCard.jsx
 import { HugeiconsIcon } from "@hugeicons/react";
 import {
   CalendarIcon,     
