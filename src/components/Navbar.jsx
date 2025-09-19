@@ -10,8 +10,8 @@ export default function Navbar() {
       <nav className="navbar container">
         <a href="#inicio" className="navbar-brand">Operación Bigotes.</a>
         <div className="navbar-actions">
-          <a href="#donar" className="btn btn-outline">Donar</a>
-          <a href="#crear" className="btn btn-brand">Crear cuenta</a>
+          <a href="#donar" className="btn btn-donate">Donar</a>
+          <a href="#crear" className="btn  btn-create-account">Crear cuenta</a>
         </div>
         <button
           className="nav-toggle"
@@ -27,8 +27,8 @@ export default function Navbar() {
           <li><a className="nav-link" href="#adopcion" onClick={closeMenu}>Ver Gatos</a></li>
           <li><a className="nav-link" href="#contacto" onClick={closeMenu}>Contacto</a></li>
           <li className="nav-actions-mobile">
-            <a href="#donar" className="btn btn-outline" onClick={closeMenu}>Donar</a>
-            <a href="#crear" className="btn btn-brand" onClick={closeMenu}>Crear cuenta</a>
+            <a href="#donar" className="btn btn-donate" onClick={closeMenu}>Donar</a>
+            <a href="#crear" className="btn btn-create-account" onClick={closeMenu}>Crear cuenta</a>
           </li>
         </ul>
       </nav>

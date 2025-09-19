@@ -66,10 +66,8 @@ body.menu-open {
   right: 16px;
   top: calc(100% + 10px);
   background: #fff;
-  border: 1px solid #E9E5DF;
   border-radius: 16px;
   padding: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
   transform: translateY(4px);
   opacity: 0;
   transition: transform .16s ease, opacity .16s ease;
@@ -104,7 +102,29 @@ body.menu-open {
   font-size: 16px;
   text-decoration: none;
   cursor: pointer;
-  border: 1.5px solid #232323;
+  border: 1.5px solid transparent;
+  transition: background-color .2s ease, color .2s ease;
+}
+
+.btn-donate {
+  background: #fff;
+  color: #232323;
+  border-color: #232323;
+}
+.btn-donate:hover {
+  background: #b490ff;   
+  border-color: #232323;
+  color: #232323;
+}
+
+.btn-create-account {
+  background: #DEC4FF;
+  color: #232323;
+  border-color: #232323;
+}
+.btn-create-account:hover {
+  background: #b490ff; 
+  border-color: #232323;
 }
 
 .nav-actions-mobile {
