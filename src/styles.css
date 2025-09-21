@@ -351,3 +351,87 @@ body.menu-open {
     height: 385px; 
   }
 }
+
+.tagwrap {
+  padding: 10px 0;
+}
+
+.tagwrap-viewport {
+  max-width: none;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.tagwrap-track {
+  display: flex;
+  gap: 15px;
+  min-width: 100%;
+  flex-wrap: nowrap;
+  animation: tagwrap-marquee 24s linear infinite;
+}
+
+.tagwrap-row {
+  display: flex;
+  gap: 14px;
+  padding: 10px 0;
+  flex-shrink: 0;
+}
+
+.tagwrap-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #fff;
+  color: #232323;
+  font-size: 14px;
+  border: 1px solid rgba(0,0,0,.10);
+  box-shadow: 0 1px 0 rgba(0,0,0,.06);
+}
+
+.tagwrap-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.tagwrap-dot-green  { background: #B7F397; }
+.tagwrap-dot-blue   { background: #2D74FF; }
+.tagwrap-dot-red    { background: #FF5A3D; }
+.tagwrap-dot-pink   { background: #FF62C8; }
+.tagwrap-dot-yellow { background: #FFD54F; }
+
+@keyframes tagwrap-marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (min-width: 768px) {
+  .tagwrap-track {
+    animation-duration: 28s;
+  }
+  .tagwrap-chip {
+    font-size: 15px;
+    padding: 11px 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tagwrap-track {
+    animation-duration: 32s;
+  }
+  .tagwrap-chip {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tagwrap-track {
+    animation: none;
+  }
+}
