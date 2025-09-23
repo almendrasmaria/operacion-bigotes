@@ -6,7 +6,7 @@ export default function App() {
   return (
     <>
       <Navbar />
-      
+
       <section className="hero">
         <div className="container hero-inner">
           <p className="hero-eyebrow">
@@ -41,8 +41,76 @@ export default function App() {
           </div>
         </div>
       </section>
-
+      
       <TagWrap/>
+
+      <section className="services">
+        <div className="services-container">
+          <div className="services-inner">
+            <div className="services-header">
+              <p className="services-eyebrow">
+                <span className="services-dot"></span>
+                Proceso de adopción
+              </p>
+              <h2 className="services-title">
+                Nuestro proceso simple para una adopción{" "}
+                <span className="highlight">responsable</span>
+              </h2>
+            </div>
+            <div className="services-grid">
+              <div className="srv-item">
+                <div className="srv-icon-wrap">
+                  <div className="srv-icon yellow">
+                    <RocketIcon width={22} height={22} />
+                  </div>
+                </div>
+                <div className="srv-card">
+                  <div className="srv-card-body">
+                    <h3 className="srv-card-title">Busqueda</h3>
+                    <p className="srv-card-copy">
+                      Explorá perfiles verificados y usá filtros por sexo (hembra/macho) y ubicación para encontrar mascotas cerca tuyo.
+                    </p>
+                  </div>
+                  <button className="srv-card-btn">Conocer más</button>
+                </div>
+              </div>
+              <div className="srv-item">
+                <div className="srv-icon-wrap">
+                  <div className="srv-icon blue">
+                    <RocketIcon width={22} height={22} />
+                  </div>
+                </div>
+                <div className="srv-card">
+                  <div className="srv-card-body">
+                    <h3 className="srv-card-title">Contacto</h3>
+                    <p className="srv-card-copy">
+                      Completá el formulario y, si cumplís los requisitos, se comunicaran contigo para continuar con el proceso de adopción.
+                    </p>
+                  </div>
+                  <button className="srv-card-btn">Conocer más</button>
+                </div>
+              </div>
+              <div className="srv-item">
+                <div className="srv-icon-wrap">
+                  <div className="srv-icon orange">
+                    <RocketIcon width={22} height={22} />
+                  </div>
+                </div>
+                <div className="srv-card">
+                  <div className="srv-card-body">
+                    <h3 className="srv-card-title">Adopción</h3>
+                    <p className="srv-card-copy">
+                      Firmá el acuerdo de adopción, organizá la prueba de convivencia y recibí seguimiento para su adaptación.
+                    </p>
+                  </div>
+                  <button className="srv-card-btn">Conocer más</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+ 
     </>
   );
 }
