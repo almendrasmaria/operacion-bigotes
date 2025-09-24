@@ -759,7 +759,7 @@ body.menu-open {
   font-weight: 600;
   color: #151515;
   margin: 0;
-  min-height: 72px;
+  height: 72px;
 }
 
 .faq-item.open .faq-question {
