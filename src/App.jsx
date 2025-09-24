@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar.jsx";
 import TagWrap from "./components/TagWrap.jsx";  
+import Faq from "./components/Faq.jsx";
 import { RocketIcon } from "@radix-ui/react-icons";
 
 export default function App() {
@@ -110,6 +111,8 @@ export default function App() {
           </div>
         </div>
       </section>
+
+      <Faq />
  
     </>
   );
