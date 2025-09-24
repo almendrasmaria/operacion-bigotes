@@ -572,13 +572,13 @@ body.menu-open {
 }
 
 .srv-card-title {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   margin: 0;
 }
 
 .srv-card-copy {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   color: #5b5b5b;
   margin: 0;
