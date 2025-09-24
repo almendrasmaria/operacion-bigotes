@@ -8,19 +8,12 @@ body {
   color: black; 
 }
 
-body.menu-open {
-  overflow: hidden;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
   padding: 20px;
 }
 
@@ -214,19 +207,19 @@ body.menu-open {
 }
 
 .hero-eyebrow{
-  display:inline-flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
   gap:8px;
-  margin-inline:auto;
   font-size:14px;
-  opacity:.9;
+
 }
 .hero-dot{
-  width:8px; 
-  height:8px; 
-  border-radius:50%;
-  background:#E74C3C; 
-  display:inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background:#E74C3C;
+  display: inline-block;
 }
 
 .hero-title{
@@ -466,7 +459,6 @@ body.menu-open {
   align-items: center;
   gap: 6px;
   font-size: 14px;
-  color: var(--ink);
 }
 
 .services-dot {
@@ -694,7 +686,6 @@ body.menu-open {
   align-items: center;
   gap: 6px;
   font-size: 14px;
-  color: var(--ink);
 }
 
 .faq-dot {
