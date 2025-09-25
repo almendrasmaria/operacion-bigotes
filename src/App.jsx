@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar.jsx";
 import TagWrap from "./components/TagWrap.jsx";  
 import Faq from "./components/Faq.jsx";
+import Footer from "./components/Footer.jsx";
 import { FaPaw, FaSearch, FaEnvelope, FaHome } from "react-icons/fa";
 
 export default function App() {
@@ -113,6 +114,8 @@ export default function App() {
       </section>
 
       <Faq />
+
+      <Footer />
  
     </>
   );
