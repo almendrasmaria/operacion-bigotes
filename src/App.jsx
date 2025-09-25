@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar.jsx";
 import TagWrap from "./components/TagWrap.jsx";  
 import Faq from "./components/Faq.jsx";
-import { RocketIcon } from "@radix-ui/react-icons";
+import { FaPaw, FaSearch, FaEnvelope, FaHome } from "react-icons/fa";
 
 export default function App() {
   return (
@@ -26,7 +26,7 @@ export default function App() {
           <div className="hero-actions">
             <a href="#adoptar" className="btn btn-adopt">Adoptar</a>
             <button className="btn btn-icon">
-              <RocketIcon width={22} height={22} />
+              <FaPaw width={22} height={22} />
             </button>
           </div>
           <div className="hero-gallery">
@@ -62,7 +62,7 @@ export default function App() {
               <div className="srv-item">
                 <div className="srv-icon-wrap">
                   <div className="srv-icon yellow">
-                    <RocketIcon width={22} height={22} />
+                    <FaSearch width={22} height={22} />
                   </div>
                 </div>
                 <div className="srv-card">
@@ -78,7 +78,7 @@ export default function App() {
               <div className="srv-item">
                 <div className="srv-icon-wrap">
                   <div className="srv-icon blue">
-                    <RocketIcon width={22} height={22} />
+                    <FaEnvelope width={22} height={22} />
                   </div>
                 </div>
                 <div className="srv-card">
@@ -94,7 +94,7 @@ export default function App() {
               <div className="srv-item">
                 <div className="srv-icon-wrap">
                   <div className="srv-icon orange">
-                    <RocketIcon width={22} height={22} />
+                    <FaHome width={22} height={22} />
                   </div>
                 </div>
                 <div className="srv-card">
